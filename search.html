@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head id="head">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Chatroom</title>
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+    <script>
+        var stylesFile = document.createElement("link");
+        stylesFile.rel = "stylesheet";
+        stylesFile.href = getStyle();
+        stylesFile.id = "styleFile";
+        document.getElementById("head").appendChild(stylesFile);
+
+        function setNewStyle() {
+
+            document.getElementById("styleFile").href = getStyle();
+
+        }
+    </script>
+    <div class="topnav">
+
+        <a href="index.html">ChatRoom </a>
+        <a class="active" href="search.html"> SearchChat</a>
+        <a href="delete.html"> AdminChat</a>
+        <a href="Searchdelete1.html"> SearchAdminChat</a>
+        <a href="https://fluance.ch/" class="pictureLink">
+            <img src="data:image/png;base64,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">
+        </a>
+
+    </div>
+    <div class="element textcolor align sitedescription">
+
+        <div class="textspecial animated lightSpeedIn">SearchChat</div>
+        <div class="textspecial1 animated lightSpeedIn">This is a website, where you have the possibility to search for in the chat history</div>
+        <div class="element textcolor align animated lightSpeedIn boxdecoration">
+            Select your style
+            <input type="button" value="Lightmode" onclick="choosMode('lightmode'),setNewStyle()" class="boxdecoration">
+            <input type="button" value="Darkmode" onclick="choosMode('darkmode') ,setNewStyle()" class="boxdecoration">
+        </div>
+    </div>
+    </div>
+    <div class="chatwindow boxdecoration element textcolor scrollbox animated lightSpeedIn">
+
+        <label for="option">Choose your filter:</label>
+        <select name="option" id="option">
+            <option value="user" >Username</option>
+            <option value="message">Message</option>
+        </select>
+        <br>
+        <input type="demo" name="searchText" id="searchText" size="32" th:value="${searchText}" required placeholder="Search Bar"> &nbsp;
+        <input type="button" onclick="sendResult()" value="Send" id="myBtn"> &nbsp;
+
+    </div>
+    <div>
+
+        <div class="container element animated lightSpeedIn ">
+
+            <div id="chatbox"></div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script>
+        var input = document.getElementById("searchText");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("myBtn").click();
+            }
+        });
+    </script>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        var messages;
+    </script>
+    <script>
+        function sendResult() {
+            var results = document.getElementById("searchText").value;
+            var options = document.getElementById("option").value;
+
+            var sendUrl = "http://remospi.hopto.org:8080/chatroom/messages/";
+
+            sendUrl = sendUrl + "search/" + options + "/" + results;
+
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    clearSearch();
+                    messages = JSON.parse(this.responseText);
+                    writeMessages();
+                }
+            };
+            xmlhttp.open("GET", sendUrl, true);
+            xmlhttp.send();
+        }
+    </script>
+    <script>
+        function writeMessages() {
+
+            for (var i = 0; i < messages.length; i++) {
+
+                var message = messages[i];
+                var options = document.getElementById("option").value;
+
+                if (document.getElementById("element-" + message.id) == null) {
+
+                    var bubblediv = document.createElement("div")
+
+                    var elementUser = document.createElement("div");
+                    var elementMessage = document.createElement("div");
+                    var elementTime = document.createElement("div");
+
+                    var id = message.id;
+
+
+                    var textValueTime = document.createTextNode(formatDate(message.time));
+                    if (options == "message") {
+
+                        elementMessage.innerHTML = replaceEmoji(marking(message.message, document.getElementById("searchText").value));
+                        elementUser.innerHTML = replaceEmoji(message.username, document.getElementById("searchText").value);
+                    }
+                    if (options == "user") {
+
+                        elementUser.innerHTML = replaceEmoji(marking(message.username, document.getElementById("searchText").value));
+                        elementMessage.innerHTML = replaceEmoji(message.message, document.getElementById("searchText").value);
+
+                    }
+                    elementTime.appendChild(textValueTime);
+
+                    var NameValue = message.username;
+
+                    bubblediv.className = "bubble"
+                    elementUser.className = "bubbleUser";
+                    elementMessage.className = "bubbleMessage";
+                    elementTime.className = "bubbleTime";
+
+                    bubblediv.id = "element-" + id;
+                    bubblediv.appendChild(elementUser);
+                    bubblediv.appendChild(elementMessage);
+                    bubblediv.appendChild(elementTime);
+
+
+                    document.getElementById("chatbox").appendChild(bubblediv);
+                }
+            }
+        }
+    </script>
+    <script>
+        function formatDate(d) {
+            date = new Date(d);
+            var today = new Date();
+
+            if (today.getDate() == date.getDate() && today.getMonth() == date.getMonth() && today.getFullYear() == date.getFullYear()) {
+                return date.getHours() + ":" + date.getMinutes();
+            } else {
+                return date.getDay() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+            }
+        }
+    </script>
+    <script>
+        function clearSearch() {
+            const deleteSearch = document.getElementById("chatbox");
+            deleteSearch.innerHTML = '';
+        }
+    </script>
+    <script>
+        function replaceEmoji(messageText) {
+
+            messageText = messageText.replaceAll(":)", "&#128512")
+            messageText = messageText.replaceAll(":D", "&128513")
+            messageText = messageText.replaceAll(":P", "&#128523")
+            messageText = messageText.replaceAll(";)", "&#128521")
+            messageText = messageText.replaceAll(":-|)", "&#128529")
+            messageText = messageText.replaceAll(";P", "&#128540")
+            messageText = messageText.replaceAll("><", "&#128541")
+            messageText = messageText.replaceAll("cR", "&#169")
+            messageText = messageText.replaceAll("vsia", "&#128526")
+
+            return messageText;
+        }
+    </script>
+    <script>
+        var characterQuestion = "'',.''";
+        var characterSlash = "''''...''''";
+        var characterSemiColon = "..''''.....'";
+        var characterHashTag = "''''......";
+
+        function specialcharacters(messageText) {
+            messageText = messageText.replaceAll("?", characterQuestion);
+            messageText = messageText.replaceAll("/", characterSlash);
+            messageText = messageText.replaceAll(";", characterSemiColon);
+            messageText = messageText.replaceAll("#", characterHashTag);
+            return messageText;
+        }
+
+        function debugspecialcharacters(messageText) {
+            messageText = messageText.replaceAll(characterQuestion, "?");
+            messageText = messageText.replaceAll(characterSlash, "/");
+            messageText = messageText.replaceAll(characterSemiColon, ";");
+            messageText = messageText.replaceAll(characterHashTag, "#");
+            return messageText;
+        }
+    </script>
+    <script>
+        function marking(messageText, marksearched) {
+
+            return messageText.replaceAll(marksearched, "<span class='marked'>" + marksearched + "</span>")
+        }
+    </script>

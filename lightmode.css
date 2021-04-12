@@ -1,0 +1,321 @@
+    body {
+        background-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/238/072/original/abstract-stylish-business-blue-wave-background.jpg);
+        background-size: 100%;
+        margin: 0px;
+    }
+    
+    .sitedescription {
+        font-size: medium;
+    }
+    
+    .chatwindow {
+        border-style: solid;
+        border-width: 3px;
+        margin-top: 50px;
+    }
+    
+    .deleteButton {
+        width: 100%;
+    }
+    
+    .element {
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    .textcolor {
+        color: cornflowerblue;
+        font-weight: 600;
+        font-size: medium;
+    }
+    
+    .align {
+        text-align: center;
+        font-family: "Lucida Console", Courier, monospace;
+        font-size: 2vw;
+    }
+    
+    .scrollbox {
+        overflow: auto;
+    }
+    
+    .tdUser {
+        width: 50%;
+    }
+    
+    .tdMessage {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 50%;
+    }
+    
+    .tdTime {
+        width: 50%;
+    }
+    
+    .container {
+        border: 2px solid #076aff;
+        max-height: 500px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background: linear-gradient(4deg, cornflowerblue 30%, white 63%);
+        background-size: 100%;
+        height: 60px;
+    }
+    
+    .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    .topnav a:hover {
+        background-color: white;
+        color: cornflowerblue;
+    }
+    
+    .topnav a.active {
+        background-color: white;
+        color: cornflowerblue;
+    }
+    
+    .marked {
+        background-color: #1A7404;
+    }
+    
+    .bubble {
+        position: relative;
+        background: linear-gradient(4deg, #076aff 30%, cornflowerblue 63%);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        width: 200px;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .bubble:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        z-index: 1;
+        border-style: solid;
+        border-width: 20px 20px 0 0;
+        border-color: #076aff transparent transparent transparent;
+        bottom: -20px;
+        left: auto;
+        margin-left: -10px;
+    }
+    
+    .bubbleUser {
+        text-align: left;
+        text-align: top;
+        font-size: 19px;
+        color: deepskyblue;
+        font-weight: 750;
+        -moz-hyphens: auto;
+        -o-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+    
+    .bubbleMessage {
+        text-align: left;
+        font-size: 22px;
+        color: white;
+        -moz-hyphens: auto;
+        -o-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+    
+    .bubbleTime {
+        text-align: right;
+        text-align: bottom;
+        font-size: 16px;
+        color: white;
+        -moz-hyphens: auto;
+        -o-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+    
+    .PersonalBubble {
+        position: relative;
+        background: linear-gradient(4deg, #076aff 30%, cornflowerblue 63%);
+        color: #FFFFFF;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: right;
+        width: 200px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
+    
+    .PersonalBubble:after {
+        content: '';
+        position: absolute;
+        display: right;
+        width: 0;
+        z-index: 1;
+        border-style: solid;
+        border-width: 0 28px 20px 0;
+        border-color: transparent #076aff transparent transparent;
+        bottom: -20px;
+        left: 76%;
+        margin-left: -14px;
+    }
+    
+    .PersonalBubbleUser {
+        text-align: right;
+        text-align: top;
+        font-size: 19px;
+        color: darkblue;
+        font-weight: 750;
+        -moz-hyphens: auto;
+        -o-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+    
+    .PersonalBubbleMessage {
+        text-align: right;
+        font-size: 22px;
+        color: white;
+        -moz-hyphens: auto;
+        -o-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+    
+    .PersonalBubbleTime {
+        text-align: left;
+        text-align: bottom;
+        font-size: 16px;
+        color: white;
+        -moz-hyphens: auto;
+        -o-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+    
+    .textspecial {
+        font-size: 70px;
+        color: cornflowerblue;
+        font-family: "Arial Black", Gadget, sans-serif;
+        text-shadow: 0px 0px 0 rgb(2, 101, 250), 1px 1px 0 rgb(-3, 96, 245), 2px 2px 0 rgb(-8, 91, 240), 3px 3px 0 rgb(-13, 86, 235), 4px 4px 0 rgb(-18, 81, 230), 5px 5px 0 rgb(-23, 76, 225), 6px 6px 0 rgb(-28, 71, 220), 7px 7px 0 rgb(-33, 66, 215), 8px 8px 0 rgb(-38, 61, 210), 9px 9px 0 rgb(-43, 56, 205), 10px 10px 0 rgb(-48, 51, 200), 11px 11px 10px rgba(15, 255, 255, 0.6), 11px 11px 1px rgba(15, 255, 255, 0.5), 0px 0px 10px rgba(15, 255, 255, .2);
+    }
+    
+    .textspecial1 {
+        font-size: 30px;
+        color: cornflowerblue;
+        font-family: "Arial Black", Gadget, sans-serif;
+        text-shadow: 0px 0px 0 rgb(2, 101, 250), 1px 1px 0 rgb(-3, 96, 245), 2px 2px 0 rgb(-8, 91, 240), 3px 3px 0 rgb(-13, 86, 235), 4px 4px 0 rgb(-18, 81, 230), 5px 5px 0 rgb(-23, 76, 225), 6px 6px 0 rgb(-28, 71, 220), 7px 7px 0 rgb(-33, 66, 215), 8px 8px 0 rgb(-38, 61, 210), 9px 9px 0 rgb(-43, 56, 205), 10px 10px 0 rgb(-48, 51, 200), 11px 11px 10px rgba(15, 255, 255, 0.6), 11px 11px 1px rgba(15, 255, 255, 0.5), 0px 0px 10px rgba(15, 255, 255, .2);
+    }
+    
+    #animated-example {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background-color: #62A80A;
+        border: solid 1px #1A7404;
+    }
+    
+    .animated {
+        -webkit-animation-duration: 1.6s;
+        animation-duration: 1.6s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    
+    @-webkit-keyframes lightSpeedIn {
+        0% {
+            -webkit-transform: translateX(100%) skewX(-30deg);
+            opacity: 0;
+        }
+        60% {
+            -webkit-transform: translateX(-20%) skewX(30deg);
+            opacity: 1;
+        }
+        80% {
+            -webkit-transform: translateX(0%) skewX(-15deg);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translateX(0%) skewX(0deg);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes lightSpeedIn {
+        0% {
+            transform: translateX(100%) skewX(-30deg);
+            opacity: 0;
+        }
+        60% {
+            transform: translateX(-20%) skewX(30deg);
+            opacity: 1;
+        }
+        80% {
+            transform: translateX(0%) skewX(-15deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(0%) skewX(0deg);
+            opacity: 1;
+        }
+    }
+    
+    .lightSpeedIn {
+        -webkit-animation-name: lightSpeedIn;
+        animation-name: lightSpeedIn;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    
+    .animated.lightSpeedIn {
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+    }
+    
+    .boxdecoration {
+        font-weight: 900;
+        font-size: medium;
+        color: white;
+        background: linear-gradient(4deg, #076aff 20%, cornflowerblue 63%);
+    }
+    
+    img {
+        float: right;
+        height: 100%;
+    }
+    
+    .pictureLink {
+        all: revert !important;
+    }
